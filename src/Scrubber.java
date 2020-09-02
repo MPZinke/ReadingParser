@@ -133,7 +133,7 @@ public class Scrubber
 	// creates a text file containing the desired data determined in ::toString() -> Day::toString().
 	public void to_file(String path) throws IOException
 	{
-		String filename =	path+"/Readings_"+Integer.toString(_month+1)+"_"+Integer.toString(_year)+".txt";
+		String filename =	path+"\\Readings_"+Integer.toString(_month+1)+"_"+Integer.toString(_year)+".txt";
 		FileWriter writer = new FileWriter(filename);
 		writer.write(this.toString());
 		writer.close();
